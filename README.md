@@ -2,6 +2,7 @@
 
 # Run
 You can train and evaluate ``GANEIS`` by executing ``train_ganeis.py``.
+The evaluation results will be stroed in the ``save`` folder.
 
 # Datasets
 To reproduce the extrapolation results of SIMD, we should prepare the following two datasets of thermoelectric materials.
