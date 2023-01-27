@@ -6,5 +6,5 @@ You can train and evaluate ``GANEIS`` by executing ``train_ganeis.py``.
 
 # Notes
 - The evaluation results will be stored in the ``save`` folder.
-- Due to the file size, the pre-converted datasets have been compressed to ``.zip`` file. Please, decompress the ``.zip`` files in ``save/datasets`` folder.
+- Due to the file size, the pre-converted datasets have been compressed to zip files. Please, decompress the zip files in ``save/datasets`` folder.
 - You can use pre-converted datasets by setting ``decomposition`` to ``False`` in ``train_ganeis.py``.
