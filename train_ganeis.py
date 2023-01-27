@@ -26,12 +26,12 @@ preds = list()
 # Load dataset.
 if decomposition:
     elem_attrs = scale(load_elem_attrs('res/matscholar-embedding.json'))
-    dataset_calc = load_calc_dataset(path_dataset='../../data/chem_data/qm9_max6.xlsx',
+    dataset_calc = load_calc_dataset(path_dataset='res/qm9_max6.xlsx',
                                      elem_attrs=elem_attrs,
                                      idx_struct=0,
                                      idx_feat=[4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
                                      idx_energy=8)
-    dataset = load_dataset(path_dataset='../../data/chem_data/' + dataset_name + '.xlsx',
+    dataset = load_dataset(path_dataset='datasets' + dataset_name + '.xlsx',
                            elem_attrs=elem_attrs,
                            idx_struct=0,
                            idx_target=1)
