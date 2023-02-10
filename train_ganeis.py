@@ -70,6 +70,7 @@ for k in range(0, n_folds):
     optimizer = torch.optim.Adam(ganeis.parameters(), lr=init_lr, weight_decay=l2_coeff)
     criterion = torch.nn.L1Loss()
     for epoch in range(0, n_epochs):
+        # Epsilon was set to 0.009187331, since the unit of the calculated energies in the QM9 dataset is Hartree.
         train_loss = ganeis.fit(loader_train, optimizer, criterion, eps=0.009187331)
         print('Epoch [{}/{}]\tTrain loss: {:.4f}'.format(epoch + 1, n_epochs, train_loss))
 
