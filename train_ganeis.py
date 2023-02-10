@@ -9,7 +9,7 @@ from ganeis.model import *
 
 
 # Experiment settings.
-dataset_name = 'lipo'
+dataset_name = 'igc50'
 decomposition = False
 n_folds = 5
 batch_size = 32
